@@ -1,0 +1,4 @@
+node_modules/
+/dist
+!/dist/server/package.json
+package-lock.json

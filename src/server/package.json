@@ -1,0 +1,32 @@
+{
+	"name": "reference",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.ts",
+	"scripts": {
+		"build-server-dev": "x4build node monitor=main.js",
+		"build-server-dev (debug)": "x4build node watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"better-sqlite3": "^7.6.2",
+		"ejs": "^3.1.8",
+		"express": "^4.18.1",
+		"express-session": "^1.17.3"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"x4build": "latest"
+	},
+	"x4build": {
+		"external": [
+			"better-sqlite3"
+		],
+		"postBuild": [
+			"cp -r ./views ${outdir}",
+			"cp -r ./public ${outdir}"
+		]
+	}
+}
