@@ -10,15 +10,11 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@types/express": "^4.17.13",
 		"x4build": "latest"
 	},
 	"x4build": {
-		"external": [
-			"better-sqlite3"
-		],
 		"postBuild": [
-			"cp -ra ${srcdir}/src/assets ${outdir}"
+			"@copy ${srcdir}/src/assets ${outdir}"
 		]
 	},
 	"dependencies": {
