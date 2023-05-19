@@ -4,7 +4,6 @@
 	"description": "",
 	"main": "src/index.html",
 	"scripts": {
-		"build-client-dev": "x4build build --watch --hmr"
 	},
 	"keywords": [],
 	"author": "",
