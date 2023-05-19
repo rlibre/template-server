@@ -9,7 +9,6 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"x4build": "latest"
 	},
 	"x4build": {
 		"postBuild": [
