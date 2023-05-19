@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "main.ts",
 	"scripts": {
-		"build-server-dev": "x4build node monitor=main.js",
-		"build-server-dev (debug)": "x4build node watch"
+		"build-server-dev": "x4build build --monitor=main.js",
+		"build-server-dev (debug)": "x4build build --watch"
 	},
 	"keywords": [],
 	"author": "",
