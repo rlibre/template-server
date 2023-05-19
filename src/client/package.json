@@ -16,7 +16,7 @@
 		]
 	},
 	"dependencies": {
-		"x4js": "^1.4.49"
+		"x4js": "latest"
 	}
 }
 
