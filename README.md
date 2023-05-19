@@ -10,13 +10,13 @@ The client is a standard x4js project monitored in hmr mode
 ## Prerequisite:
   1. you need node & npm installed on the machine.
   2. you should have visual studio code installed
-  3. on windows you must use git bash terminal
 
 ## installation 
 To install this template, do not clone it but use instead
 
 ```sh
-npx x4builder create name=<your project name> model=node
+npm install x4build@latest
+npx x4build create <your project name> type=server
 ```
 
 
